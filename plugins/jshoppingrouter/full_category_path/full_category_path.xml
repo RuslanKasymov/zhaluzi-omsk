@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="jshoppingrouter" method="upgrade">
+	<name>JoomShopping - Full Category Path</name>
+	<author>Nevigen.com</author>
+	<creationDate>April, 2014</creationDate>
+	<copyright>Copyright © Nevigen.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@nevigen.com</authorEmail>
+	<authorUrl>http://nevigen.com/</authorUrl>
+	<version>3.130.1.1</version>
+	<description><![CDATA[Developed & Powered by <a href="http://nevigen.com/" target="_blank">Nevigen.com</a>]]></description>
+	<files>
+		<filename plugin="full_category_path">full_category_path.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

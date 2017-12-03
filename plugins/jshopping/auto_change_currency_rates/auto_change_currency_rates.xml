@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?> 	         	       	       	      	          	
+<extension version="2.5.0" type="plugin" group="jshopping" method="upgrade">
+	<name>JoomShopping - Auto change currency rates</name>
+	<author>Dmitry Stashenko</author>
+	<creationDate>October, 2015</creationDate>
+	<copyright>Copyright © Nevigen.com. All rights reserved.</copyright>
+	<license>Proprietary. Copyrighted Commercial Software</license>
+	<authorEmail>support@nevigen.com</authorEmail>
+	<authorUrl>http://nevigen.com/</authorUrl>
+    <version>3.70.1.2</version>
+	<description>
+<![CDATA[<p>Denve® Edition</p>]]>
+	</description>
+	<files>
+		<folder>element</folder>
+		<folder>language</folder>
+		<filename plugin="auto_change_currency_rates">auto_change_currency_rates.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="key"
+					type="text"
+					size="80"
+					default="any key"
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_KEY"
+					description="" />
+				<field
+					name="starthour"
+					type="list"
+					default="0"
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_STARTHOUR"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_STARTHOUR_DESC">
+					<option value="0">00:00</option>
+					<option value="1">01:00</option>
+					<option value="2">02:00</option>
+					<option value="3">03:00</option>
+					<option value="4">04:00</option>
+					<option value="5">05:00</option>
+					<option value="6">06:00</option>
+					<option value="7">07:00</option>
+					<option value="8">08:00</option>
+					<option value="9">09:00</option>
+					<option value="10">10:00</option>
+					<option value="11">11:00</option>
+					<option value="12">12:00</option>
+					<option value="13">13:00</option>
+					<option value="14">14:00</option>
+					<option value="15">15:00</option>
+					<option value="16">16:00</option>
+					<option value="17">17:00</option>
+					<option value="18">18:00</option>
+					<option value="19">19:00</option>
+					<option value="20">20:00</option>
+					<option value="21">21:00</option>
+					<option value="22">22:00</option>
+					<option value="23">23:00</option>
+				</field>
+				<field
+					name="stephour"
+					type="list"
+					default="24"
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_STEPHOUR"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_STEPHOUR_DESC">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="6">6</option>
+					<option value="8">8</option>
+					<option value="12">12</option>
+					<option value="24">24</option>
+				</field>
+				<field
+					name="percent"
+					type="text"
+					default="0"
+					filter="float"
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_PERCENT"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_PERCENT_DESC" />
+				<field
+					name="bank"
+					type="list"
+					default="0"
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_BANK"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_BANK_DESC">
+					<option value="1">MOD_AUTO_CHANGE_CURRENCY_RATES_BANK_1</option>
+					<option value="2">MOD_AUTO_CHANGE_CURRENCY_RATES_BANK_2</option>
+					<option value="3">MOD_AUTO_CHANGE_CURRENCY_RATES_BANK_3</option>
+					<option value="4">MOD_AUTO_CHANGE_CURRENCY_RATES_BANK_4</option>
+					<option value="5">MOD_AUTO_CHANGE_CURRENCY_RATES_BANK_5</option>
+					<option value="6">MOD_AUTO_CHANGE_CURRENCY_RATES_BANK_6</option>
+					<option value="7">MOD_AUTO_CHANGE_CURRENCY_RATES_BANK_7</option>
+				</field>
+				<field
+					name="xml"
+					type="text"
+					size="80"
+					default=""
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_XML"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_XML_DESC" />
+				<field
+					name="xml_date"
+					type="text"
+					size="80"
+					default=""
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_XML_DATE"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_XML_DATE_DESC" />
+				<field
+					name="node"
+					type="text"
+					size="80"
+					default=""
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_NODE"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_NODE_DESC" />
+				<field
+					name="node_iso"
+					type="text"
+					size="80"
+					default=""
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_NODE_ISO"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_NODE_ISO_DESC" />
+				<field
+					name="node_rate"
+					type="text"
+					size="80"
+					default=""
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_NODE_RATE"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_NODE_RATE_DESC" />
+				<field
+					name="node_nominal"
+					type="text"
+					size="80"
+					default=""
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_NODE_NOMINAL"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_NODE_NOMINAL_DESC" />
+				<field
+					name="type"
+					type="list"
+					default="1"
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_TYPE"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_TYPE_DESC">
+					<option value="1">MOD_AUTO_CHANGE_CURRENCY_RATES_TYPE_1</option>
+					<option value="2">MOD_AUTO_CHANGE_CURRENCY_RATES_TYPE_2</option>
+				</field>
+				<field
+					name="currency"
+					type="text"
+					size="80"
+					default=""
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_CURRENCY"
+					description="MOD_AUTO_CHANGE_CURRENCY_RATES_CURRENCY_DESC" />
+				<field type="spacer" />
+				<field
+					name="status"
+					type="textarea"
+					rows="5"
+					cols="40"
+					default=""
+					label="MOD_AUTO_CHANGE_CURRENCY_RATES_STATUS"
+					description="" />
+				<field
+					name="nexthour"
+					type="hidden"
+					default="0" />
+				<field
+					name="nextdate"
+					type="hidden"
+					default="19700101" />
+				<field
+					addfieldpath="/plugins/jshopping/auto_change_currency_rates/element"
+					name="script"
+					type="script"
+					default="" />
+			</fieldset> 
+		</fields>
+	</config>	   
+</extension>

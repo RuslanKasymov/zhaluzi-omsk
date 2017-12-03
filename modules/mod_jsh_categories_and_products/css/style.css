@@ -1,0 +1,6 @@
+.jscat-and-prod li {overflow:hidden;}
+.jscat-and-prod li.parent > span {float:left;margin-right:5px;cursor:pointer;display:block;width:15px; height:15px; background:url(indicator.png) 0 0 no-repeat;}
+.jscat-and-prod li.parent > span.open { background-position:0 100%;}
+.jscat-and-prod ul.categories, .jscat-and-prod ul.products {padding-left:20px;clear:both;}
+.jscat-and-prod li.parent > a.open,.jscat-and-prod li.parent > a.closed {padding-left:20px;background:url(indicator.png) 0 0 no-repeat;}
+.jscat-and-prod li.parent > a.open { background-position:0 100%;}

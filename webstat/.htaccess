@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/xn----7sbrffndlr5a1l.xn--p1ai/webstat"
+AuthUserFile /var/www/addamant/data/etc/21555639.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

@@ -1,0 +1,290 @@
+AWSTATS DATA FILE 7.1 (build 1.983)
+# If you remove this file, all statistics for date 201407 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.xn----7sbrffndlr5a1l.xn--p1ai.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2009                
+POS_TIME 2681                
+POS_VISITOR 6480                
+POS_DAY 6706                
+POS_DOMAIN 3309                
+POS_LOGIN 3541                
+POS_ROBOT 3696                
+POS_WORMS 3972                
+POS_EMAILSENDER 4103                
+POS_EMAILRECEIVER 4246                
+POS_SESSION 6840                
+POS_SIDER 7012                
+POS_FILETYPES 4381                
+POS_DOWNLOADS 4625                
+POS_OS 4673                
+POS_BROWSER 4804                
+POS_SCREENSIZE 4972                
+POS_UNKNOWNREFERER 5046                
+POS_UNKNOWNREFERERBROWSER 5213                
+POS_ORIGIN 5375                
+POS_SEREFERRALS 5512                
+POS_PAGEREFS 5656                
+POS_SEARCHWORDS 5804                
+POS_KEYWORDS 5956                
+POS_MISC 2344                
+POS_ERRORS 6015                
+POS_CLUSTER 3397                
+POS_SIDER_404 6111                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20140801020111 1 0 6640151155881
+FirstTime 20140729154812
+LastTime 20140731143848
+LastUpdate 20140801020126 1 0 0 0 0
+TotalVisits 11                  
+TotalUnique 1                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 5                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 34 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 1 15481 0 0 0
+1 0 0 0 1 1 314
+2 0 0 0 0 0 0
+3 1 1 15481 0 0 0
+4 0 0 0 1 1 855
+5 0 0 0 0 0 0
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 1 42 15481 0 0 0
+9 0 0 0 0 0 0
+10 55 213 2912086 34 35 0
+11 73 1248 12142721 14 29 40201
+12 90 940 8573043 23 26 5996
+13 30 363 2597047 8 13 1737
+14 5 88 918377 2 3 14552
+15 61 855 4229836 13 19 4054
+16 103 1466 10549279 17 22 3450
+17 8 70 361504 3 9 5764
+18 0 0 0 1 1 304
+19 2 33 802714 1 2 855
+20 8 36 127281 2 2 1710
+21 0 0 0 1 1 304
+22 0 0 0 1 1 855
+23 2 2 1894 1 4 1158
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 440 5358 43262225
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+yandex 10 22301 20140731234744 2
+no_user_agent 4 29283 20140731041017 0
+mj12bot 3 2592 20140730155305 1
+archive\.org_bot 1 882 20140730113353 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+css 484 14598686 0 0
+png 1876 4127736 0 0
+woff 69 103236 0 0
+php 158 9171487 0 0
+html 153 2036897 0 0
+jpg 757 6812466 0 0
+js 1778 5715810 0 0
+Unknown 60 694764 0 0
+gif 23 1143 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+macosx 68 9
+winxp 2 2
+Unknown 16 16
+winvista 5034 398
+win7 238 15
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 7
+iphone 68 9
+opera9.24 1 1
+chrome36.0.1985.125 5237 410
+firefox30.0 33 1
+Unknown 16 16
+firefox16.0 1 1
+firefox31.0 2 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+WebIndex 20140729231257
+2ip.ru_CMS_Detector_(http://2ip.ru/cms/) 20140730113344
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+WebIndex 20140729231257
+2ip.ru_CMS_Detector_(http://2ip.ru/cms/) 20140730113344
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 66 66
+From1 0 0
+From2 0 0
+From3 0 0
+From4 374 5292
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+303 104 0
+404 8 2439
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 3
+/sitemap.xml 4 -
+/catalog/ya-market.php 1 -
+/robots.txt 3 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 5
+87.118.100.181 440 440 12006384 20140731143848
+109.94.206.46 0 31 786286 
+188.232.203.138 0 41 0 
+188.232.132.57 0 28 114 
+176.62.88.169 0 4818 30469441 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 3
+20140729 4 4 3788 3
+20140730 250 3444 23765193 4
+20140731 186 1910 19493244 4
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+1h+ 2
+30s-2mn 1
+0s-30s 7
+30mn-1h 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 26
+/administrator/index.php 153 9168922 0 0
+/ 139 1978467 10 10
+/media/jui/fonts/IcoMoon.woff 57 76272 0 0
+/o-nas 23 229931 0 0
+/stati 21 228347 0 0
+/administrator/ 5 52445 0 0
+/partnjoram 5 65125 0 1
+/media/nnframework/fonts/NoNumber.woff 4 11452 0 0
+/media/editors/tinymce/skins/lightgray/fonts/tinymce-small.woff 4 7848 0 0
+/media/editors/tinymce/skins/lightgray/fonts/tinymce.woff 4 7664 0 0
+/kontakty 2 24769 0 0
+/uslugi/podpunkt-1 2 31678 0 0
+/stati/8-ckhema-bytovykh-avtomaticheskikh-garazhnykh-vorot 1 17373 0 0
+/this_page_is_not_exist_i_am_sure/ 1 855 0 0
+/netcat/ 1 855 0 0
+/wp-admin/ 2 855 0 0
+/partnjoram/9-produktsiya/2-vertikalnye-zhalyuzi 3 48906 0 0
+/10-stati/8-ckhema-bytovykh-avtomaticheskikh-garazhnykh-vorot 1 16385 0 0
+/kontakty/6-vertikalnye-zhalyuzi-2 2 32250 1 0
+/textpattern/ 1 855 0 0
+/bitrix/admin/ 1 855 0 0
+/typo3/index.php 2 855 0 0
+/wp-login.php 2 855 0 0
+/modx/manager/ 1 855 0 0
+/engine/print.php 1 855 0 0
+/admin/ 2 855 0 0
+END_SIDER

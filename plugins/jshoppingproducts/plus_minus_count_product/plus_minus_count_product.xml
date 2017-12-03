@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" type="plugin" method="upgrade" group="jshoppingproducts">
+	<name>JoomShopping - Plus and Minus Count Product</name>
+	<author>Vadim Meling</author>
+	<creationDate>August, 2012</creationDate>
+	<copyright>Copyright by Nevigen Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@nevigen.eu</authorEmail>
+	<authorUrl>http://nevigen.eu/</authorUrl>
+    <version>1.0</version>
+	<description>Plus and Minus Count Product</description>
+	<files>
+		<filename plugin="plus_minus_count_product">plus_minus_count_product.php</filename>
+	</files>
+</extension>

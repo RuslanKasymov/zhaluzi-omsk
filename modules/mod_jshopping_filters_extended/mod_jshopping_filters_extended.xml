@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+<name>Jshopping Filters Extended</name> 
+	<creationDate>17.09.2014</creationDate>
+    <author>MAXXmarketing GmbH</author>
+    <authorEmail>marketing@maxx-marketing.net</authorEmail>
+    <authorUrl>http://www.webdesigner-profi.de</authorUrl>
+    <copyright></copyright>
+    <license>MAXXmarketing</license>
+    <version>4.0.10</version>
+	<description>Displays extended filters of shop.</description>
+	<files>
+	<filename module="mod_jshopping_filters_extended">mod_jshopping_filters_extended.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>css/mod_jshopping_filters.css</filename>
+	<filename>css/jquery-ui-slider.css</filename> 
+	<filename>js/jquery-ui.min-slider.js</filename> 		
+        <filename>element/attributes.php</filename>  
+        <filename>element/characteristics.php</filename>
+        <filename>helper.php</filename> 
+	</files>
+    <languages>
+        <language
+            tag="en-GB">en-GB.mod_jshopping_filters_extended.ini</language>
+        <language
+            tag="de-DE">de-DE.mod_jshopping_filters_extended.ini</language>  
+        <language
+            tag="ru-RU">ru-RU.mod_jshopping_filters_extended.ini</language>                       
+    </languages>     
+    <config>
+        <fields name="params">
+            <fieldset name="basic"> 
+		<field  
+                    name="filter_order" 
+                    type="order" 
+                    default="manufacturer,categories,vendors,price,characteristic,label,availability,photo_filter,delivery_time,attribute"					
+                    label="OUTPUT_ORDER" 
+                    description="OUTPUT_ORDER"> 
+                </field>                   
+                <field name="show_on_all_pages" type="radio" default="0" label="SHOW_ON_ALL_PAGES" description="SHOW_ON_ALL_PAGES">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="show_horizontal" type="radio" default="0" label="SHOW_HORIZONTAL" description="SHOW_HORIZONTAL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field> 
+                <field name="columns_count" type="list" default="3" label="COLUMNS_COUNT" description="COLUMNS_COUNT">
+                    <option value="6">2</option>
+                    <option value="4">3</option>
+                    <option value="3">4</option>
+                    <option value="2">6</option>
+                </field>                                              
+                <field
+                    name="show_manufacturers"
+                    type="radio"
+                    default="1"
+                    label="SHOW_MANUFACTURERS"
+                    description="SHOW_MANUFACTURERS">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">Yes_Checkbox</option>
+                    <option
+                        value="2">Yes_Select</option>
+                </field>
+                <field
+                    name="show_categorys"
+                    type="radio"
+                    default="1"
+                    label="SHOW_CATEGORYS"
+                    description="SHOW_CATEGORYS">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">Yes_Checkbox</option>
+                    <option
+                        value="2">Yes_Select</option>
+                </field>
+                <field
+                    name="show_vendors"
+                    type="radio"
+                    default="1"
+                    label="SHOW_VENDORS"
+                    description="SHOW_VENDORS">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">Yes_Checkbox</option>
+                    <option
+                        value="2">Yes_Select</option>  
+                </field>                
+                <field
+                    name="show_prices"
+                    type="radio"
+                    default="1"
+                    label="SHOW_PRICES"
+                    description="SHOW_PRICES">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">JYES</option>
+                </field>
+                <field
+                    name="show_price_button"
+                    type="radio"
+                    default="0"
+                    label="SHOW_PRICE_BUTTON"
+                    description="SHOW_PRICE_BUTTON">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">JYES</option>
+                </field>                  
+                <field
+                    name="show_prices_slider"
+                    type="radio"
+                    default="0"
+                    label="SHOW_PRICES_SLIDER"
+                    description="SHOW_PRICES_SLIDER">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">JYES</option>
+                </field>                
+                <field
+                    name="show_characteristics"
+                    type="radio"
+                    default="1"
+                    label="SHOW_CHARACTERISTICS"
+                    description="SHOW_CHARACTERISTICS">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">Yes_Checkbox</option>
+                    <option
+                        value="2">Yes_Select</option> 
+                </field>  
+                <field  
+                    name="char_id" 
+                    type="characteristics" 
+                    size="10" 
+                    default=""                    
+                    label="Characteristics" 
+                    description="Characteristics" 
+                    addfieldpath="/modules/mod_jshopping_filters_extended/element"/> 
+                <field
+                    name="show_characteristics_button"
+                    type="radio"
+                    default="0"
+                    label="SHOW_CHAR_BUTTON"
+                    description="SHOW_CHAR_BUTTON">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">JYES</option>
+                </field>                                                                 
+                <field
+                    name="show_labels"
+                    type="radio"
+                    default="1"
+                    label="Show labels"
+                    description="Show labels">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">Yes_Checkbox</option>
+                    <option
+                        value="2">Yes_Select</option>  
+                </field>
+                <field
+                    name="show_attributes"
+                    type="radio"
+                    default="1"
+                    label="Show_Attributes"
+                    description="Show_Attributes">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">Yes_Checkbox</option>
+                    <option
+                        value="2">Yes_Select</option>  
+                </field>                                               
+                <field  
+                    name="attr_id" 
+                    type="attributes" 
+                    size="10" 
+                    default=""                    
+                    label="Attributes" 
+                    description="Attributes" 
+                    addfieldpath="/modules/mod_jshopping_filters_extended/element"/>  
+                <field  
+                    name="show_attribute_image" 
+                    type="attributes" 
+                    size="10" 
+                    default=""                    
+                    label="Show_Attribute_Image" 
+                    description="Show_Attribute_Image" 
+                    addfieldpath="/modules/mod_jshopping_filters_extended/element"/>                                  
+                 <field
+                    name="show_quantity"
+                    type="radio"
+                    default="1"
+                    label="SHOW_PRODUCTS_IN_STOCK"
+                    description="SHOW_PRODUCTS_IN_STOCK">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">JYES</option>
+                </field>    
+                 <field
+                    name="show_photo_filter"
+                    type="radio"
+                    default="1"
+                    label="Show_Photo_filter"
+                    description="Show_Photo_filter">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">JYES</option> 
+                </field>   
+                 <field
+                    name="show_delivery_time"
+                    type="radio"
+                    default="1"
+                    label="Show_Delivery_time"
+                    description="Show_Delivery_time">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">Yes_Checkbox</option>
+                    <option
+                        value="2">Yes_Select</option>  
+                </field>                                                            
+
+                    
+                <field name="pricef1" type="text" label="Price From" description="Price From 1" />
+                <field name="pricet1" type="text" label="Price To" description="Price To 1" />
+                <field name="pricef2" type="text" label="Price From" description="Price From 2" />
+                <field name="pricet2" type="text" label="Price To" description="Price To 2" />
+                <field name="pricef3" type="text" label="Price From" description="Price From 3" />
+                <field name="pricet3" type="text" label="Price To" description="Price To 3" />
+                <field name="pricef4" type="text" label="Price From" description="Price From 4" />
+                <field name="pricet4" type="text" label="Price To" description="Price To 4" />
+                <field name="pricef5" type="text" label="Price From" description="Price From 5" />
+                <field name="pricet5" type="text" label="Price To" description="Price To 5" />
+                <field name="pricef6" type="text" label="Price From" description="Price From 6" />
+                <field name="pricet6" type="text" label="Price To" description="Price To 6" />
+                <field name="pricef7" type="text" label="Price From" description="Price From 7" />
+                <field name="pricet7" type="text" label="Price To" description="Price To 7" />
+                <field name="pricef8" type="text" label="Price From" description="Price From 8" />
+                <field name="pricet8" type="text" label="Price To" description="Price To 8" />
+                 
+                 <field
+                    name="display_unavailable_value"
+                    type="radio"
+                    default="1"
+                    label="Display_unavailable_value"
+                    description="Show_Display_unavailable_value_time">
+                    <option
+                        value="0">Not display</option>
+                    <option
+                        value="1">As disable</option>
+                </field>                   
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field
+                    name="use_select_chosen"
+                    type="radio"
+                    default="0"
+                    label="USE_SELECT_CHOSEN"
+                    description="USE_SELECT_CHOSEN">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">JYES</option>
+                </field>   
+                <field
+                    name="use_select_chosen_multiple"
+                    type="radio"
+                    default="0"
+                    label="USE_SELECT_CHOSEN_MULTIPLE"
+                    description="USE_SELECT_CHOSEN_MULTIPLE">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">JYES</option>
+                </field>                                                       
+            </fieldset> 
+        </fields>
+    </config>       
+</extension>
